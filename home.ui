@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QMainWindow" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="AnaForm">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>11</y>
+      <width>901</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>kitap_id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>kitap adı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>kitap yazarı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>okunma durumu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>beğeni durumu</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="kliste">
+    <property name="title">
+     <string>Kitap Listesi</string>
+    </property>
+    <addaction name="actionlistele"/>
+   </widget>
+   <widget class="QMenu" name="kekle">
+    <property name="title">
+     <string>Kitap Ekle</string>
+    </property>
+    <addaction name="actioneklemek"/>
+   </widget>
+   <widget class="QMenu" name="kguncelle">
+    <property name="title">
+     <string>Kitap Güncelle</string>
+    </property>
+    <addaction name="actionguncelle"/>
+   </widget>
+   <widget class="QMenu" name="ksil">
+    <property name="title">
+     <string>Kitap Sil</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionsil"/>
+   </widget>
+   <widget class="QMenu" name="cikis">
+    <property name="title">
+     <string>Çıkış</string>
+    </property>
+    <addaction name="actioncikis"/>
+   </widget>
+   <addaction name="kliste"/>
+   <addaction name="kekle"/>
+   <addaction name="kguncelle"/>
+   <addaction name="ksil"/>
+   <addaction name="cikis"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actioneklemek">
+   <property name="text">
+    <string>kitap ekle</string>
+   </property>
+  </action>
+  <action name="actionguncelle">
+   <property name="text">
+    <string>guncelle</string>
+   </property>
+  </action>
+  <action name="actionsil">
+   <property name="text">
+    <string>sil</string>
+   </property>
+  </action>
+  <action name="actioncikis">
+   <property name="text">
+    <string>cikis</string>
+   </property>
+  </action>
+  <action name="actionlistele">
+   <property name="text">
+    <string>listele</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
